@@ -8,7 +8,13 @@
         <span class="icon-bar"></span>
       </button>
       <h3 style="color:#fff;">Twipper</h3>
-      <!-- <a class="navbar-brand" href="#">Bootstrap theme</a> -->
+      <div class="tweet_search">
+        <div class="searchbar_and_button">
+          <input id="search_tweets" type="text" placeholder="Twip a word" class="search_bar"/>
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+          <button id="TwipperSearch">Search!</button>
+        </div>
+      </div>
     </div>
     <div class="navbar-collapse collapse" style="padding-top:8px;">
       <ul class="nav navbar-nav">
