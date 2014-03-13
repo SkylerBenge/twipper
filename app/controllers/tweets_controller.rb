@@ -17,7 +17,7 @@ class TweetsController < ApplicationController
       puts "in thread"
         file = File.read("public/data/data.json")
           p file
-      TweetStream::Client.new.track('san francisco') do |tweet|
+      TweetStream::Client.new.track('tweet', 'twitter') do |tweet|
         # puts "tracking"
         if tweet.geo
 
